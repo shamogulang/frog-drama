@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    # 如果使用docker,这里不能用localhost
+    url: jdbc:mysql://localhost:3306/caraliu?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  config-location: classpath:cn/frog/frogdramacms/mybatis/mybatis.config.xml
+  mapper-locations: classpath*:cn/frog/frogdramacms/mybatis/mapper/**/*.xml
+
+
+#caraliu:
+#  minio:
+#    endpoint: http://127.0.0.1:9000
+#    accesskey: minioadmin
+#    secretKey: minioadmin
+#    bucket: caraliu
+#    checkBucket: true
+#    createBucket: true

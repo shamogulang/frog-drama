@@ -1,0 +1,32 @@
+##mybatis代码自动生成代码##
+
+connection:
+  driverClass: com.mysql.jdbc.Driver
+  connectionURL: jdbc:mysql://localhost:3306/caraliu?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+  userId: root
+  password: root
+
+entity:
+  targetPackage: cn.frog.frogdramacms.mybatis.entity
+  targetProject: '%s/src/main/java'
+
+mapper:
+  targetPackage: cn.frog.frogdramacms.mybatis.mapper
+  targetProject: '%s/src/main/java'
+
+xmlMapper:
+  targetPackage: cn.frog.frogdramacms.mybatis.mapper
+  targetProject: '%s/src/main/resources'
+
+repository:
+  targetPackage: cn.frog.frogdramacms.mybatis.repository
+  targetProject: '%s/src/main/java'
+  ignore: false
+
+modelOnly: false
+
+table:
+  - name: book
+    column: pk
+#  - name: mng_role
+#    column: pk
